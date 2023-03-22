@@ -1,9 +1,9 @@
 import React from 'react';
 
-export function Profile() {
+export function Profile({ image }) {
     return (
-        <div>
-            <img src="https://i.imgur.com/MK3eW3Am.jpg" alt="Katherine Johnson" />
-        </div>
+        <>
+            <img src={image} alt="Katherine Johnson" />
+        </>
     );
 }
