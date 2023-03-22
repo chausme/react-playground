@@ -1,0 +1,37 @@
+{
+    "name": "react-playground",
+    "version": "1.0.0",
+    "description": "React playground",
+    "type": "module",
+    "source": "public/index.html",
+    "scripts": {
+        "dev": "npx webpack serve",
+        "build": "node ./node_modules/.bin/webpack",
+        "serve": "node server.js",
+        "start": "npm run build && npm run serve",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chausme/react-tic-tac-toe.git"
+    },
+    "author": "chausme",
+    "bugs": {
+        "url": "https://github.com/chausme/react-tic-tac-toe/issues"
+    },
+    "homepage": "https://github.com/chausme/react-tic-tac-toe#readme",
+    "keywords": ["react", "game"],
+    "dependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-scripts": "^5.0.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.21.3",
+        "@babel/preset-env": "^7.20.2",
+        "@babel/preset-react": "^7.18.6",
+        "babel-loader": "^9.1.2",
+        "webpack": "^5.76.2",
+        "webpack-cli": "^5.0.1"
+    }
+}
