@@ -1,5 +1,10 @@
 import React from 'react';
+import { P } from './p';
 
-export function Info({ content }) {
-    return <article>{content}</article>;
+export function Info(props) {
+    return (
+        <article>
+            <P {...props}></P>
+        </article>
+    );
 }

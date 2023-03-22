@@ -31,7 +31,7 @@ export function About() {
                     color: '#999',
                 }}
             >
-                <Info content="Lorem ipsum dolor sit amet consectetur adipisicing elit. In pariatur ad earum perspiciatis temporibus dolorem? Ad, aspernatur! Ad, minima nostrum?" />
+                <Info content="Test text" />
             </section>
             <section className="profiles">
                 {profiles.map(profile => (
