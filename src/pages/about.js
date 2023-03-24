@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react';
 import { Profile } from './components/profile';
-import { Info } from './components/info';
+import { InfoWrap } from './components/infoWrap';
+import { P } from './components/p';
 
 export function About() {
     const profiles = [
         {
             id: 1,
-            body: <Profile image="https://i.imgur.com/MK3eW3Am.jpg" />,
+            body: <Profile image="https://i.imgur.com/MK3eW3Am.jpg" wrap="true" />,
         },
         {
             id: 2,
@@ -14,7 +15,7 @@ export function About() {
         },
         {
             id: 3,
-            body: <Profile image="https://i.imgur.com/MK3eW3Am.jpg" />,
+            body: <Profile image="https://i.imgur.com/MK3eW3Am.jpg" wrap="true" />,
         },
         {
             id: 4,
@@ -31,7 +32,9 @@ export function About() {
                     color: '#999',
                 }}
             >
-                <Info content="Test text" />
+                <InfoWrap>
+                    <P content="Test text"></P>
+                </InfoWrap>
             </section>
             <section className="profiles">
                 {profiles.map(profile => (
