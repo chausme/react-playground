@@ -1,6 +1,9 @@
 import React from 'react';
 
-export function Profile({ image, wrap }) {
+export function Profile({ image, wrap, display }) {
+    if (display === false) {
+        return null;
+    }
     if (wrap) {
         return (
             <>
@@ -10,7 +13,7 @@ export function Profile({ image, wrap }) {
     } else {
         return (
             <>
-                <span class="image-wrap">
+                <span className="image-wrap">
                     <img src={image} alt="" />
                 </span>
             </>

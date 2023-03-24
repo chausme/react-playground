@@ -3,7 +3,7 @@ import React from 'react';
 export function InfoWrap({ children }) {
     return (
         <article
-            class="info"
+            className="info"
             style={{
                 backgroundColor: 'pink',
                 color: '#333',

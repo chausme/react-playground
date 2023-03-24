@@ -5,7 +5,7 @@ export function P({
 }) {
     return (
         <article
-            class="paragraph"
+            className="paragraph"
             style={{
                 backgroundColor: 'cyan',
                 color: '#666',
