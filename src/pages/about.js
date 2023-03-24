@@ -7,15 +7,31 @@ export function About() {
     const profiles = [
         {
             id: 1,
-            body: <Profile image="https://i.imgur.com/MK3eW3Am.jpg" wrap={true} display={true} />,
+            body: (
+                <Profile
+                    image="https://i.imgur.com/MK3eW3Am.jpg"
+                    wrap={true}
+                    display={true}
+                    alt="description"
+                />
+            ),
         },
         {
             id: 2,
-            body: <Profile image="https://i.imgur.com/MK3eW3Am.jpg" display={true} />,
+            body: (
+                <Profile image="https://i.imgur.com/MK3eW3Am.jpg" display={true} votesCount={30} />
+            ),
         },
         {
             id: 3,
-            body: <Profile image="https://i.imgur.com/MK3eW3Am.jpg" wrap={true} display={true} />,
+            body: (
+                <Profile
+                    image="https://i.imgur.com/MK3eW3Am.jpg"
+                    wrap={true}
+                    display={true}
+                    votesCount={0}
+                />
+            ),
         },
         {
             id: 4,
