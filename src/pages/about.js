@@ -15,12 +15,14 @@ export function About() {
                     alt="description"
                 />
             ),
+            visible: true,
         },
         {
             id: 2,
             body: (
                 <Profile image="https://i.imgur.com/MK3eW3Am.jpg" display={true} votesCount={30} />
             ),
+            visible: true,
         },
         {
             id: 3,
@@ -32,14 +34,17 @@ export function About() {
                     votesCount={0}
                 />
             ),
+            visible: true,
         },
         {
             id: 4,
             body: <Profile image="https://i.imgur.com/MK3eW3Am.jpg" display={true} />,
+            visible: true,
         },
         {
             id: 5,
             body: <Profile image="https://i.imgur.com/MK3eW3Am.jpg" display={false} />,
+            visible: false,
         },
     ];
 
@@ -57,12 +62,16 @@ export function About() {
                 </InfoWrap>
             </section>
             <section className="profiles">
-                {profiles.map(profile => (
-                    <span key={profile.id}>
-                        <strong>Profile #{profile.id}</strong>
-                        <Fragment key={profile.id}>{profile.body}</Fragment>
-                    </span>
-                ))}
+                <ul>
+                    {profiles
+                        .filter(profile => profile.visible === true)
+                        .map(profile => (
+                            <li key={profile.id}>
+                                <strong>Profile #{profile.id}</strong>
+                                <Fragment key={profile.id}>{profile.body}</Fragment>
+                            </li>
+                        ))}
+                </ul>
             </section>
         </>
     );
