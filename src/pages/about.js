@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { Profile } from './components/profile';
 import { InfoWrap } from './components/infoWrap';
 import { P } from './components/p';
+import { Button } from '../components/button';
 
 export function About() {
     const profiles = [
@@ -60,6 +61,18 @@ export function About() {
                 <InfoWrap>
                     <P content="Test text"></P>
                 </InfoWrap>
+                <Button
+                    title="Open"
+                    onSmash={() => {
+                        alert(`Clicked "Open" button`);
+                    }}
+                />
+                <Button
+                    title="Close"
+                    onSmash={() => {
+                        alert(`Clicked "Close" button`);
+                    }}
+                />
             </section>
             <section className="profiles">
                 <ul>
